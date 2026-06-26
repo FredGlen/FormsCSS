@@ -1,0 +1,490 @@
+/* ============================================================
+   NINTEX REVENUE ENABLEMENT NEWSLETTER — FORM CSS
+   Brand Device 1 swoosh background (4 animated layers)
+   Frosted glass form card | Purple-to-Pink-200 section tints
+   Font: Plus Jakarta Sans | All text: #8439A6
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+/* ── Tokens ───────────────────────────────────────────────── */
+:root {
+    --nx-purple:   #8439A6;
+    --nx-dp:       #3D0456;
+    --nx-p1:       #ED2891;
+    --nx-p2:       #D60D8C;
+    --nx-p3:       #BE0075;
+    --nx-p050:     #FFD4EB;
+    --nx-ivory:    #FFF9F4;
+    --nx-font:     'Plus Jakarta Sans', Arial, sans-serif;
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+body {
+    background-color: var(--nx-ivory) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    position: relative !important;
+    font-family: var(--nx-font) !important;
+    color: var(--nx-purple) !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   ANIMATED BACKGROUND — 4 SWOOSH LAYERS (Brand Device 1)
+   Each layer is a wide repeating SVG of large curved fills
+   and sinuous arc lines, moving at different speeds/directions
+   to create immersive cross-flow depth.
+   ══════════════════════════════════════════════════════════ */
+
+/* Layer 1 — large purple fills, top, slow leftward drift */
+body::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 300% !important;
+    height: 55% !important;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%20500%22%3E%3Cpath%20d%3D%22M-100%20380C200%20120%20500%20460%20800%20260%201050%2090%201300%20380%201700%20200L1700%20500-100%20500Z%22%20fill%3D%22%238439A6%22%20fill-opacity%3D%22.09%22%2F%3E%3Cpath%20d%3D%22M-100%20420C250%20160%20560%20480%20860%20290%201100%20120%201380%20400%201700%20240L1700%20500-100%20500Z%22%20fill%3D%22%23D60D8C%22%20fill-opacity%3D%22.06%22%2F%3E%3Cpath%20d%3D%22M-100%20300C300%2080%20600%20420%20900%20200%201150%2040%201420%20340%201700%20160%22%20stroke%3D%22%238439A6%22%20stroke-width%3D%221.5%22%20stroke-opacity%3D%22.2%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M-100%20200C350%20420%20680%20100%20980%20340%201230%20520%201500%20180%201700%20300%22%20stroke%3D%22%23ED2891%22%20stroke-width%3D%221%22%20stroke-opacity%3D%22.15%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M-100%20160C400%20380%20720%2060%201020%20300%201280%20480%201540%20140%201700%20260%22%20stroke%3D%22%23D60D8C%22%20stroke-width%3D%22.8%22%20stroke-opacity%3D%22.12%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E") !important;
+    background-repeat: repeat-x !important;
+    background-size: 1600px 500px !important;
+    z-index: 0 !important;
+    animation: nx-s1 50s linear infinite !important;
+    pointer-events: none !important;
+}
+
+/* Layer 2 — pink fills, bottom, rightward drift */
+body::after {
+    content: '' !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: -100% !important;
+    width: 300% !important;
+    height: 55% !important;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%20500%22%3E%3Cpath%20d%3D%22M-100%2080C250%20340%20560%2020%20860%20220%201100%20390%201380%2060%201700%20240L1700%200-100%200Z%22%20fill%3D%22%23ED2891%22%20fill-opacity%3D%22.07%22%2F%3E%3Cpath%20d%3D%22M-100%20120C300%20380%20620%2040%20920%20260%201170%20440%201440%20100%201700%20280L1700%200-100%200Z%22%20fill%3D%22%238439A6%22%20fill-opacity%3D%22.07%22%2F%3E%3Cpath%20d%3D%22M-100%20180C300%20420%20640%2060%20940%20300%201200%20480%201480%20140%201700%20320%22%20stroke%3D%22%23BE0075%22%20stroke-width%3D%221.2%22%20stroke-opacity%3D%22.16%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M-100%2080C350%20300%20700%2020%201000%20240%201260%20420%201520%2080%201700%20200%22%20stroke%3D%22%238439A6%22%20stroke-width%3D%22.9%22%20stroke-opacity%3D%22.12%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E") !important;
+    background-repeat: repeat-x !important;
+    background-size: 1600px 500px !important;
+    z-index: 0 !important;
+    animation: nx-s2 65s linear infinite !important;
+    pointer-events: none !important;
+}
+
+/* Layer 3 — mid-screen, diagonal deep purple arcs */
+.nx-theme-page::before {
+    content: '' !important;
+    position: fixed !important;
+    top: 20% !important;
+    left: -100% !important;
+    width: 300% !important;
+    height: 60% !important;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%20500%22%3E%3Cpath%20d%3D%22M-100%20250C300%2050%20650%20450%20950%20220%201200%2030%201500%20400%201700%20180%22%20stroke%3D%22%233D0456%22%20stroke-width%3D%222%22%20stroke-opacity%3D%22.08%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M-100%20350C350%20120%20700%20480%201000%20280%201250%20100%201550%20440%201700%20260%22%20stroke%3D%22%238439A6%22%20stroke-width%3D%221.4%22%20stroke-opacity%3D%22.1%22%20fill%3D%22none%22%2F%3E%3Cpath%20d%3D%22M-100%20150C400%20380%20750%2080%201050%20320%201300%20500%201580%20160%201700%20340%22%20stroke%3D%22%23D60D8C%22%20stroke-width%3D%221%22%20stroke-opacity%3D%22.1%22%20fill%3D%22none%22%2F%3E%3C%2Fsvg%3E") !important;
+    background-repeat: repeat-x !important;
+    background-size: 1600px 500px !important;
+    z-index: 0 !important;
+    animation: nx-s3 80s linear infinite !important;
+    pointer-events: none !important;
+}
+
+/* Layer 4 — slow full-screen translucent fills, cross-flow */
+.nx-theme-page::after {
+    content: '' !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 300% !important;
+    height: 100% !important;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201600%20800%22%3E%3Cpath%20d%3D%22M-100%20600C400%20200%20800%20700%201200%20350%201500%20100%201700%20500L1700%20800-100%20800Z%22%20fill%3D%22%238439A6%22%20fill-opacity%3D%22.04%22%2F%3E%3Cpath%20d%3D%22M-100%20200C500%20600%20900%20100%201300%20480%201600%20750%201700%20300L1700%200-100%200Z%22%20fill%3D%22%23ED2891%22%20fill-opacity%3D%22.04%22%2F%3E%3C%2Fsvg%3E") !important;
+    background-repeat: repeat-x !important;
+    background-size: 1600px 800px !important;
+    z-index: 0 !important;
+    animation: nx-s4 110s linear infinite reverse !important;
+    pointer-events: none !important;
+}
+
+/* ── Swoosh keyframes ─────────────────────────────────────── */
+@keyframes nx-s1 { 0% { transform: translateX(0); } 100% { transform: translateX(-800px); } }
+@keyframes nx-s2 { 0% { transform: translateX(-800px); } 100% { transform: translateX(0); } }
+@keyframes nx-s3 { 0% { transform: translateX(0); } 100% { transform: translateX(-800px); } }
+@keyframes nx-s4 { 0% { transform: translateX(-800px); } 100% { transform: translateX(0); } }
+
+/* ── Radial glow blobs ────────────────────────────────────── */
+@keyframes nx-pb { 0%,100% { transform: scale(1); opacity: .75; } 50% { transform: scale(1.15); opacity: 1; } }
+
+#nx-form-container::before {
+    content: '' !important;
+    display: block !important;
+    position: fixed !important;
+    top: -160px !important;
+    right: -120px !important;
+    left: auto !important;
+    width: 600px !important;
+    height: 600px !important;
+    border-radius: 50% !important;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(132,57,166,.22) 0%, rgba(132,57,166,.08) 45%, rgba(132,57,166,0) 100%) !important;
+    z-index: 1 !important;
+    animation: nx-pb 14s ease-in-out infinite !important;
+    pointer-events: none !important;
+}
+
+#nx-form-container::after {
+    content: '' !important;
+    display: block !important;
+    position: fixed !important;
+    bottom: -140px !important;
+    left: -120px !important;
+    right: auto !important;
+    width: 540px !important;
+    height: 540px !important;
+    border-radius: 50% !important;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(214,13,140,.2) 0%, rgba(214,13,140,.07) 45%, rgba(214,13,140,0) 100%) !important;
+    z-index: 1 !important;
+    animation: nx-pb 18s ease-in-out infinite reverse !important;
+    pointer-events: none !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FORM SHELL — frosted glass card
+   ══════════════════════════════════════════════════════════ */
+
+.nx-theme-styles .nx-theme-form {
+    background: rgba(255, 255, 255, 0.72) !important;
+    backdrop-filter: blur(18px) saturate(1.4) !important;
+    -webkit-backdrop-filter: blur(18px) saturate(1.4) !important;
+    font-family: var(--nx-font) !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding: 2.5rem !important;
+    position: relative !important;
+    z-index: 10 !important;
+    border-radius: 20px !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow:
+        0 12px 48px rgba(132, 57, 166, .14),
+        0 4px 16px rgba(132, 57, 166, .08),
+        inset 0 1px 0 rgba(255,255,255,.8) !important;
+}
+
+/* ── Nintex logo ──────────────────────────────────────────── */
+.nx-theme-styles .nx-theme-form::before {
+    content: '' !important;
+    display: block !important;
+    width: 140px !important;
+    height: 44px !important;
+    margin: 0 0 2rem 0 !important;
+    background-image: url('https://www.nintex.com/wp-content/uploads/2021/09/nintex-logo.svg') !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: left center !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SECTION GROUPS — rich gradient tints, purple→pink-200
+   ══════════════════════════════════════════════════════════ */
+
+.nx-theme-styles .nx-theme-form .group-control {
+    background: linear-gradient(135deg, rgba(255,255,255,.96) 0%, rgba(243,232,250,.55) 100%) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border-radius: 14px !important;
+    padding: 2rem !important;
+    margin-bottom: 1.75rem !important;
+    border: 1px solid rgba(132, 57, 166, .12) !important;
+    border-left: 4px solid var(--nx-purple) !important;
+    box-shadow: 0 4px 20px rgba(132,57,166,.07), inset 0 1px 0 rgba(255,255,255,.9) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    z-index: 1 !important;
+}
+
+/* Corner swoosh accent — purple→pink-200 */
+.nx-theme-styles .nx-theme-form .group-control::before {
+    content: '' !important;
+    position: absolute !important;
+    top: -60px !important;
+    right: -60px !important;
+    width: 180px !important;
+    height: 180px !important;
+    background: radial-gradient(circle at 60% 40%, rgba(214,13,140,.12) 0%, rgba(132,57,166,.08) 50%, transparent 72%) !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+
+/* Bottom-left secondary accent */
+.nx-theme-styles .nx-theme-form .group-control::after {
+    content: '' !important;
+    position: absolute !important;
+    bottom: -50px !important;
+    left: -50px !important;
+    width: 140px !important;
+    height: 140px !important;
+    background: radial-gradient(circle at 40% 60%, rgba(132,57,166,.09) 0%, transparent 70%) !important;
+    border-radius: 50% !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+}
+
+/* Cycling left border accent shades */
+.nx-theme-styles .nx-theme-form .group-control:nth-child(2n) { border-left-color: var(--nx-p2) !important; }
+.nx-theme-styles .nx-theme-form .group-control:nth-child(3n) { border-left-color: var(--nx-p1) !important; }
+.nx-theme-styles .nx-theme-form .group-control:nth-child(4n) { border-left-color: var(--nx-p3) !important; }
+
+/* ── Headings ─────────────────────────────────────────────── */
+.nx-theme-styles .nx-theme-form h1,
+.nx-theme-styles .nx-theme-form h2,
+.nx-theme-styles .nx-theme-form h3,
+.nx-theme-styles .nx-theme-form h4,
+.nx-theme-styles .nx-theme-form h5,
+.nx-theme-styles .nx-theme-form h6 {
+    color: var(--nx-purple) !important;
+    font-family: var(--nx-font) !important;
+    font-weight: 700 !important;
+    letter-spacing: -0.01em !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+.nx-theme-styles .nx-theme-form h1 {
+    font-size: 1.75rem !important;
+    letter-spacing: -0.025em !important;
+    margin-bottom: 1rem !important;
+}
+.nx-theme-styles .nx-theme-form h2,
+.nx-theme-styles .nx-theme-form h3 { font-weight: 600 !important; }
+
+/* ── Labels & text ────────────────────────────────────────── */
+.nx-theme-styles .nx-theme-label-1,
+.nx-theme-styles .nx-form-label,
+.nx-theme-styles label {
+    color: var(--nx-purple) !important;
+    font-weight: 500 !important;
+    font-family: var(--nx-font) !important;
+    font-size: 0.875rem !important;
+    letter-spacing: 0.01em !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+.nx-theme-styles .nx-theme-richtext {
+    font-family: var(--nx-font) !important;
+    color: var(--nx-purple) !important;
+    line-height: 1.7 !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* ── Input fields ─────────────────────────────────────────── */
+.nx-theme-styles .nx-theme-input-1,
+.nx-theme-styles input[type=text],
+.nx-theme-styles input[type=email],
+.nx-theme-styles input[type=number],
+.nx-theme-styles textarea,
+.nx-theme-styles select {
+    background: rgba(255, 255, 255, 0.75) !important;
+    border: 1.5px solid rgba(132, 57, 166, .2) !important;
+    border-radius: 10px !important;
+    padding: 0.65rem 1rem !important;
+    font-family: var(--nx-font) !important;
+    font-size: 0.95rem !important;
+    color: var(--nx-purple) !important;
+    transition: border-color .2s ease, box-shadow .2s ease, background .2s ease !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+.nx-theme-styles .nx-theme-input-1:focus,
+.nx-theme-styles input[type=text]:focus,
+.nx-theme-styles input[type=email]:focus,
+.nx-theme-styles input[type=number]:focus,
+.nx-theme-styles textarea:focus,
+.nx-theme-styles select:focus {
+    background: rgba(255, 255, 255, .95) !important;
+    border-color: var(--nx-purple) !important;
+    box-shadow: 0 0 0 4px rgba(132, 57, 166, .12) !important;
+    outline: none !important;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+.nx-theme-styles .nx-theme-button-1 {
+    background: linear-gradient(135deg, var(--nx-purple) 0%, var(--nx-p2) 100%) !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 0.8rem 2rem !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    font-family: var(--nx-font) !important;
+    letter-spacing: 0.02em !important;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease !important;
+    box-shadow: 0 4px 14px rgba(214, 13, 140, .3) !important;
+}
+.nx-theme-styles .nx-theme-button-1:hover {
+    background: linear-gradient(135deg, var(--nx-dp) 0%, var(--nx-p3) 100%) !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 24px rgba(214, 13, 140, .4) !important;
+}
+
+.nx-theme-styles .nx-theme-button-2 {
+    background: rgba(255,255,255,.6) !important;
+    color: var(--nx-purple) !important;
+    border: 1.5px solid var(--nx-purple) !important;
+    border-radius: 10px !important;
+    padding: 0.8rem 2rem !important;
+    font-weight: 600 !important;
+    font-family: var(--nx-font) !important;
+    transition: background .2s ease, color .2s ease, box-shadow .2s ease !important;
+}
+.nx-theme-styles .nx-theme-button-2:hover {
+    background: var(--nx-purple) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(132, 57, 166, .3) !important;
+}
+
+/* ── Repeating sections ───────────────────────────────────── */
+.ntx-repeating-section-overlay { display: none !important; }
+.ntx-repeating-section-repeated-section { position: relative !important; }
+.ntx-repeating-section-repeated-section::after {
+    content: '\2715' !important;
+    position: absolute !important;
+    top: 12px !important;
+    right: 12px !important;
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 8px !important;
+    background: rgba(132, 57, 166, .1) !important;
+    color: var(--nx-purple) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    cursor: pointer !important;
+    z-index: 20 !important;
+    transition: background .18s ease !important;
+}
+.ntx-repeating-section-repeated-section::after:hover {
+    background: rgba(132, 57, 166, .2) !important;
+}
+
+/* ── ng-select dropdowns ──────────────────────────────────── */
+.nx-theme-styles .nx-theme-ng-select-1 .ng-select-container {
+    background: rgba(255, 255, 255, .75) !important;
+    border: 1.5px solid rgba(132, 57, 166, .2) !important;
+    border-radius: 10px !important;
+    color: var(--nx-purple) !important;
+    outline: none !important;
+    transition: border-color .2s ease, box-shadow .2s ease !important;
+}
+.nx-theme-styles .nx-theme-ng-select-1 .ng-select-container:hover {
+    border-color: var(--nx-purple) !important;
+}
+.nx-theme-styles .nx-theme-ng-select-1.ng-select-focused .ng-select-container {
+    border-color: var(--nx-purple) !important;
+    outline: none !important;
+    box-shadow: 0 0 0 4px rgba(132, 57, 166, .12) !important;
+}
+.nx-theme-styles .nx-theme-ng-select-1 .ng-value-container,
+.nx-theme-styles .nx-theme-ng-select-1 .ng-input > input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+.nx-theme-styles .nx-theme-ng-select-1 .ng-value-label,
+.nx-theme-styles .nx-theme-ng-select-1 .ng-input > input { color: var(--nx-purple) !important; }
+.nx-theme-styles .nx-theme-ng-select-1 .ng-placeholder { color: rgba(132, 57, 166, .5) !important; }
+.nx-theme-styles .nx-theme-ng-select-1 .ng-arrow { border-color: var(--nx-purple) transparent transparent !important; }
+.nx-theme-styles .nx-theme-ng-select-1.ng-select-opened .ng-arrow { border-color: transparent transparent var(--nx-purple) !important; }
+.nx-theme-styles .nx-theme-ng-select-1 .ng-dropdown-panel {
+    border: 1.5px solid rgba(132, 57, 166, .18) !important;
+    border-radius: 10px !important;
+    box-shadow: 0 12px 32px rgba(132, 57, 166, .15) !important;
+    backdrop-filter: blur(12px) !important;
+    background: rgba(255,255,255,.95) !important;
+}
+.nx-theme-styles .nx-theme-ng-select-1 .ng-option { color: var(--nx-purple) !important; font-family: var(--nx-font) !important; }
+.nx-theme-styles .nx-theme-ng-select-1 .ng-option.ng-option-marked { background: rgba(132, 57, 166, .07) !important; }
+.nx-theme-styles .nx-theme-ng-select-1 .ng-option.ng-option-selected { background: rgba(132, 57, 166, .12) !important; font-weight: 600 !important; }
+
+/* ── Universal font ───────────────────────────────────────── */
+.nx-theme-styles *,
+.nx-form *,
+input, textarea, select, button,
+#nx-form-container {
+    font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FLATPICKR DATE PICKER RESETS
+   ══════════════════════════════════════════════════════════ */
+.flatpickr-calendar, .flatpickr-calendar * {
+    color: #333 !important;
+    background: #fff !important;
+    overflow: visible !important;
+}
+.flatpickr-calendar { z-index: 99999 !important; }
+.flatpickr-months,
+.flatpickr-month {
+    height: auto !important;
+    position: relative !important;
+    z-index: 2 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+.flatpickr-current-month {
+    height: auto !important;
+    position: relative !important;
+    z-index: 3 !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.flatpickr-current-month * {
+    overflow: visible !important;
+    height: auto !important;
+    color: #333 !important;
+    background: transparent !important;
+    line-height: normal !important;
+}
+.flatpickr-current-month .numInputWrapper {
+    width: 80px !important;
+    min-width: 80px !important;
+    border: none !important;
+}
+.flatpickr-current-month input.cur-year {
+    width: 80px !important;
+    min-width: 80px !important;
+}
+.flatpickr-days, .dayContainer {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* ── Responsive ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .nx-theme-styles .nx-theme-form {
+        padding: 1.5rem !important;
+        border-radius: 14px !important;
+    }
+    .nx-theme-styles .nx-theme-form .group-control {
+        padding: 1.25rem !important;
+    }
+    #nx-form-container::before,
+    #nx-form-container::after {
+        width: 300px !important;
+        height: 300px !important;
+    }
+    body::before, body::after {
+        background-size: 900px 300px !important;
+    }
+}
+
+/* ── Reduced motion ───────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+    body::before, body::after,
+    .nx-theme-page::before, .nx-theme-page::after,
+    #nx-form-container::before, #nx-form-container::after {
+        animation: none !important;
+    }
+}
