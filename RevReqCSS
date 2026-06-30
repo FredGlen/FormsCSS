@@ -420,7 +420,8 @@ input, textarea, select, button,
     background: #fff !important;
     overflow: visible !important;
 }
-.flatpickr-calendar { z-index: 99999 !important; position: absolute !important; overflow: visible !important; }
+.flatpickr-calendar { z-index: 99999 !important; position: absolute !important; overflow: visible !important; border: 1px solid rgba(132,57,166,.18) !important; border-radius: 10px !important; box-shadow: 0 12px 32px rgba(132,57,166,.15) !important; }
+.flatpickr-innerContainer, .flatpickr-rContainer, .dayContainer { border: none !important; box-shadow: none !important; }
 .flatpickr-months,
 .flatpickr-month {
     height: auto !important;
